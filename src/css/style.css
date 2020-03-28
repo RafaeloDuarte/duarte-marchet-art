@@ -1,0 +1,89 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+@font-face {
+  font-family: 'Segoe UI Light';
+  src:url('fonts/Segoe UI historic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav{
+  height: 270px;
+}
+nav ul a{
+  color:#e3b2b2;
+  font-family: 'Segoe UI Light';
+  font-size: large;
+}
+nav .brand-logo {
+  color: #444;
+}
+nav .brand-logo img{
+  max-height: 250px;
+}
+nav .nav-wrapper ul{
+  margin-top: 180px;
+}
+
+p {
+  line-height: 2rem;
+}
+.banner01 {
+  background-color: #e3b2b2;
+  height: 650px;
+}
+.banner01 .base{
+  margin-top: 2%;
+  margin-left: 18%;
+  max-height: 90%;
+}
+.passaro{
+  
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(247, 72, 72, 0.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
