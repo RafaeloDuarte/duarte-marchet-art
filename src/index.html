@@ -24,11 +24,44 @@
                 </ul>
             </div>
         </nav>
-        <div class="banner01 col s12">
-            <img class="base" src="assets/banner01img.png"/>
-        </div>
-        <img class="passaro" src="assets/passaro.png"/>
-
+        <section class="banner01 col s12">
+            <img class="base" src="assets/banner01img.png" />
+            <img class="flor_1" src="assets/img13.png" />
+            <img class="bird" src="assets/passaro.png" />
+            <div class="social-net-icons">
+                <ul>
+                    <li><a href="https://www.instagram.com/duartemarcheti/" target="_blank"><img
+                                src="assets/icone-whats.png" /></a></li>
+                    <li><a href="https://www.instagram.com/duartemarcheti/" target="_blank"><img
+                                src="assets/icone-insta.png" /></a></li>
+                    <li><a href="https://www.instagram.com/duartemarcheti/" target="_blank"><img
+                                src="assets/icone-outlook.png" /></a></li>
+                    <li><a href="https://www.instagram.com/duartemarcheti/" target="_blank"><img
+                                src="assets/icone-linkedin.png" /></a></li>
+                    <li><a href="https://www.instagram.com/duartemarcheti/" target="_blank"><img
+                                src="assets/icone-behance.png" /></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="banner02 col s12">
+            <img class="scroll" src="assets/passaro.png" />
+        </section>
     </div>
+    <script type="text/javascript">
+        var position = document.documentElement;
+        position.addEventListener("mousemove", e => {
+            position.style.setProperty('--x', e.clientX + "px");
+            position.style.setProperty('--y', e.clientY + "px");
+        })
+        window.addEventListener('scroll', e =>{
+            const target = document.querySelector('.scroll')
+
+            var scrolled = window.pageYOffset;
+            var rate = scrolled * -2
+
+            target.style.transform = 'translate3d('+rate+'px, 0px, 0px)'
+        })
+    </script>
 </body>
+
 </html>
