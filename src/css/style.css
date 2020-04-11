@@ -13,6 +13,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Solar-Bold';
+  src: url('fonts/Solar_Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Segoe Semibold Italic';
+  src: url('fonts/segoe-ui-semibold-italic.ttf');
+}
+
 nav{
   height: 270px;
 }
@@ -44,7 +56,27 @@ p {
 }
 .banner02 {
   background-color: #b6d2c3;
+  height: 300px;
+  width: 100%;
+}
+.banner02 p{
+  font-family: 'Solar-Bold';
+  margin-left: 58%;
+  font-size: 700%;
+  color: #faf8e7;
+  font-weight:lighter;
+}
+.banner02-2{
+  background-color: white;
   height: 650px;
+  width: 100%;
+}
+.banner02-3{
+  background-color: #faf8e7;
+  height: 850px;
+  width: 90%;
+  margin-top: -20%;
+  margin-left: 150px;
 }
 .sidenav-trigger {
   color: #26a69a;
@@ -55,11 +87,11 @@ p {
   margin-left: -1%;
   left:50%;
   width: 18%;
+  min-width: 18%;
 }
 .bird{
   position: absolute;
   top: 50%;
-  width: 80%;
   left:  calc(60% - var(--y)/40);
   max-width: calc(400px - var(--y)/40);
 }
@@ -69,6 +101,41 @@ p {
 }
 .social-net-icons ul li img{
   width: 50%;
+}
+.img04{
+  margin-left: 10%;
+  margin-top: -13%;
+  width: 33%;
+
+}
+.fusca{
+  margin-left: 60%;
+  margin-top: -35%;
+  width: 40%;
+}
+.mulher{
+  margin-left: -10%;
+  width: 30%;
+  position: absolute;
+}
+.folha{
+  margin-top: -5%;
+  width: 15%;
+}
+.inspiration{
+  width: 50%;
+}
+.inspiration p{
+  font-size: 250%;
+  margin-left: 10%;
+}
+.pattern-designer{
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.vejamais{
+  font-family: 'Segoe Semibold Italic';
+
 }
 
 @media only screen and (max-width : 992px) {

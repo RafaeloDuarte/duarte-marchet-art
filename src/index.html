@@ -44,7 +44,36 @@
             </div>
         </section>
         <section class="banner02 col s12">
-            <img class="scroll" src="assets/passaro.png" />
+            <p>
+                PORTIFOLIO
+            </p>
+        </section>
+        <section class="banner02-2 col s12">
+            <img class="img04" src="assets/img04.png" />
+            <img class="mulher" src="assets/mulher.png" />
+            <img class="fusca" src="assets/fusca.png" />
+            <div class="banner02-3">
+                <img class="folha" src="assets/folha.png" alt="">
+                <div class="inspiration">
+                    <img class="pattern-designer" src="assets/pattern-designer.png">
+                    <br /><br /><br /><br />
+                    <p>Eu me inspiro na natureza, animais,</p>
+                    <p>livros e faço meu trabalho com </p>
+                    <p>desenhos manuais e programas</p>
+                    <p>como Photoshop e Illustrator</p>
+                </div>
+                <p class="vejamais">Veja mais nas redes sociais:</p>
+                <p>@duartemarcheti</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/duartemarcheti/" target="_blank"><img
+                                src="assets/icone-insta.png" /></a></li>
+                    <li><a href="https://www.instagram.com/duartemarcheti/" target="_blank"><img
+                                src="assets/icone-behance.png" /></a></li>
+                </ul>
+                <div class="tucano-animation">
+                    <img src="" alt="">
+                </div>
+            </div>
         </section>
     </div>
     <script type="text/javascript">
@@ -53,13 +82,13 @@
             position.style.setProperty('--x', e.clientX + "px");
             position.style.setProperty('--y', e.clientY + "px");
         })
-        window.addEventListener('scroll', e =>{
+        window.addEventListener('scroll', e => {
             const target = document.querySelector('.scroll')
 
             var scrolled = window.pageYOffset;
             var rate = scrolled * -2
 
-            target.style.transform = 'translate3d('+rate+'px, 0px, 0px)'
+            target.style.transform = 'translate3d(' + rate + 'px, 0px, 0px)'
         })
     </script>
 </body>
