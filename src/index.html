@@ -13,10 +13,10 @@
 
 <body>
     <div class="row">
-        <nav class="nav white col s12">
+        <nav class="nav white col s12 row">
             <div class="nav-wrapper">
                 <a href="/" class="brand-logo"><img src="assets/logo.png" /></a>
-                <ul class="right hide-on-med-and-down col s6 offset-s6">
+                <ul class="right hide-on-med-and-down col s7 offset-s2">
                     <li><a>I N Í C I O</a></li>
                     <li><a>S O B R E</a></li>
                     <li><a>G A L E R I A &nbsp; D E &nbsp; E S T A M P A S</a></li>
@@ -24,7 +24,7 @@
                 </ul>
             </div>
         </nav>
-        <section class="banner01 col s12">
+        <section class="banner01 row">
             <img class="base" src="assets/banner01img.png" />
             <img class="flor_1" src="assets/img13.png" />
             <img class="bird" src="assets/passaro.png" />
@@ -43,23 +43,127 @@
                 </ul>
             </div>
         </section>
-        <section class="banner02 col s12">
-            <img class="scroll" src="assets/passaro.png" />
+        <section class="banner02 col s12 row">
+            <p>
+                PORTIFOLIO
+            </p>
+        </section>
+
+        <section class="banner02-2 row">
+            <img class="img04" src="assets/img04.png" />
+            <img class="mulher" src="assets/mulher.png" />
+            <img class="fusca" src="assets/fusca.png" />
+            <div class="banner02-3">
+                <img class="folha" src="assets/folha.png" alt="">
+                <div class="inspiration">
+                    <img class="pattern-designer" src="assets/pattern-designer.png">
+                    <br /><br /><br /><br />
+                    <p>Eu me inspiro na natureza, animais,</p>
+                    <p>livros e faço meu trabalho com </p>
+                    <p>desenhos manuais e programas</p>
+                    <p>como Photoshop e Illustrator</p>
+                </div>
+                <p class="vejamais">Veja mais nas redes sociais:</p>
+                <div class="banner02-redes-sociais">
+                    <p style="justify-self: end; margin-top: 15%; font-size: x-large;">@duartemarcheti &nbsp;</p>
+                    <a href="https://www.instagram.com/duartemarcheti/" target="_blank" style="justify-self: start;">
+                        <img src="assets/icone-insta.png" />
+                    </a>
+                    <a href="https://www.instagram.com/duartemarcheti/" target="_blank"
+                        style="justify-self: start; margin-left: -70%;"><img src="assets/icone-behance.png" /></a>
+                    <div class="tucano-animation">
+                        <div class="tucano-card">
+                            <div class="tucano-img">
+                                <img src="assets/tucano.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Lorem Ipsum Dolar</h2>
+                                <p>
+                                    Lorem Ipsum Dolar
+                                    Lorem Ipsum Dolar
+                                    Lorem Ipsum Dolar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="banner03">
+                <center>
+                    <br />
+                    <br />
+                    <h1>Sobre</h1>
+                    <h4>
+                        Nathalia Marcheti Duarte: Apaixonada por cores, tecidos,
+                    </h4>
+                    <h4>
+                        estampas e ilustrações.
+                    </h4>
+                    <h4>
+                        A arte sempre estyeve presente na minha vida desde que eu era criança.
+                    </h4>
+                    <br />
+                    <h4>
+                        Sou formada em Design pela Faculdade Paulista de Artes,
+                    </h4>
+                    <h4>
+                        trabalho como freelancer e prestadora de serviçoes há 4 anos como Designer
+                    </h4>
+                    <h4>Têxtil, e 7 anos como Designer.</h4>
+                    <br />
+                    <h4>Trabalhei em duas empresas têxtil com marcas que me ajudata, a crescer</h4>
+                    <h4>profissionalmente, vivenciei o cotidiano de importantes marcas das que </h4>
+                    <h4>contribuíram para o meu conhecimento nesse mercado.</h4>
+                </center>
+                <div class="flor-amarela">
+                    <img src="assets/flor_amarela.png" />
+                </div>
+            </section>
+            <section class="chinesinha">
+                <div>
+                    <img src="assets/chinesinha.png" alt="">
+                </div>
+                <div class="obrigado">
+                    <center>
+                        <h2>Desenvolvimentos como freelancer.</h2>
+                        <h2>Se você estiver interessado em trabalhar em conjunto ou
+                            contratar um dos meus serviços, entre em contato comigo</h2>
+                        <h2>Obrigado</h2>
+                    </center>
+                </div>
+            </section>
+            <section class="mulher-libelula">
+                <div>
+                    <img src="assets/mulher-libelula.png" alt="">
+                </div>
+            </section>
+            <section class="rodape">
+                <div class="contato">
+                    <center>
+                        <h1>CONTACT</h1>
+                        <h3>nathaliamarcheti888@hotmail.com</h3>
+                    </center>
+                </div>
+                <div class="passarinho">
+                    <img src="assets/PASSARINHO.png" alt="">
+                </div>
+            </section>
         </section>
     </div>
+
     <script type="text/javascript">
         var position = document.documentElement;
         position.addEventListener("mousemove", e => {
             position.style.setProperty('--x', e.clientX + "px");
             position.style.setProperty('--y', e.clientY + "px");
         })
-        window.addEventListener('scroll', e =>{
+        window.addEventListener('scroll', e => {
             const target = document.querySelector('.scroll')
 
             var scrolled = window.pageYOffset;
             var rate = scrolled * -2
 
-            target.style.transform = 'translate3d('+rate+'px, 0px, 0px)'
+            target.style.transform = 'translate3d(' + rate + 'px, 0px, 0px)'
         })
     </script>
 </body>

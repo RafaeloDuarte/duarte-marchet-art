@@ -1,4 +1,5 @@
 /* Custom Stylesheet */
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -8,70 +9,345 @@
 
 @font-face {
   font-family: 'Segoe UI Light';
-  src:url('fonts/Segoe UI historic.ttf') format('truetype');
+  src: url('fonts/Segoe UI historic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-nav{
+@font-face {
+  font-family: 'Solar-Bold';
+  src: url('fonts/Solar_Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe Semibold Italic';
+  src: url('fonts/segoe-ui-semibold-italic.ttf');
+}
+
+nav {
   height: 270px;
 }
-nav ul a{
-  color:#e3b2b2;
+
+nav ul a {
+  color: #e3b2b2;
   font-family: 'Segoe UI Light';
   font-size: large;
 }
+
 nav .brand-logo {
   color: #444;
 }
-nav .brand-logo img{
+
+nav .brand-logo img {
   max-height: 250px;
 }
-nav .nav-wrapper ul{
+
+nav .nav-wrapper ul {
   margin-top: 180px;
 }
+
 p {
   line-height: 2rem;
 }
+
 .banner01 {
   background-color: #e3b2b2;
-  height: 650px;
+  height: 1050px;
+  width: 100%;
+  grid-column: 1/2;
 }
-.banner01 .base{
+
+.banner01 .base {
   margin-top: 2%;
   margin-left: 18%;
   max-height: 90%;
 }
+
 .banner02 {
   background-color: #b6d2c3;
-  height: 650px;
+  height: 300px;
+  width: 100%;
+  margin-top: -50px;
 }
+
+.banner02 p {
+  font-family: 'Solar-Bold';
+  margin-left: 58%;
+  font-size: 700%;
+  color: #faf8e7;
+  font-weight: lighter;
+}
+
+.banner02-2 {
+  background-color: white;
+  height: 650px;
+  width: 100%;
+}
+
+.banner02-3 {
+  background-color: #faf8e7;
+  height: 850px;
+  width: 88%;
+  margin-top: -20%;
+  margin-left: 150px;
+  position: initial;
+}
+
+.banner02-redes-sociais {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.banner02-redes-sociais a {
+  width: 25%;
+  margin-top: 100px;
+}
+
+.banner02-redes-sociais img {
+  width: 90%;
+}
+
+.banner03 {
+  background-color: #e3b2b2;
+  width: 100%;
+  height: 900px;
+  margin-top: -15px;
+  color: #faf8e7;
+}
+
+.banner03 h1 {
+  font-weight: lighter;
+}
+
+.banner03 h4 {
+  font-weight: lighter;
+}
+
+.flor-amarela {
+  margin-top: -800px;
+  margin-left: -5%;
+  width: 100%;
+}
+
+.flor-amarela img {
+  width: 30%;
+}
+
+.chinesinha {
+  background-color: black;
+  width: 100%;
+  height: 1500px;
+}
+
+.chinesinha div img {
+  width: 100%;
+  height: 100%;
+  margin-top: -150px;
+}
+
+.obrigado {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+}
+
+.obrigado center {
+  margin-top: 100px;
+  grid-column-start: 2;
+}
+
+.obrigado center h2 {
+  font-weight: lighter;
+}
+
+.mulher-libelula {
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+}
+
+.mulher-libelula div {
+  margin-top: -160px;
+  grid-column-start: 2;
+}
+
+.mulher-libelula div img {
+  width: 100%;
+}
+
+.obrigado {
+  color: #faf8e7;
+}
+
+.rodape {
+  background-color: #faf8e7;
+  height: 500px;
+  display: grid;
+  grid-template-columns: .2fr 1fr .2fr;
+}
+
+.passarinho {
+  height: 500px;
+  grid-column-start: 3;
+}
+
+.passarinho img {
+  height: 500px;
+  margin-top: -100px;
+}
+
+.contato {
+  grid-column-start: 2;
+  margin-top: 100px;
+  color: rgb(216, 153, 72);
+}
+
 .sidenav-trigger {
   color: #26a69a;
 }
-.flor_1{
+
+.flor_1 {
   position: absolute;
   margin-top: 0%;
   margin-left: -1%;
-  left:50%;
+  left: 50%;
   width: 18%;
+  min-width: 18%;
 }
-.bird{
+
+.bird {
   position: absolute;
   top: 50%;
-  width: 80%;
-  left:  calc(60% - var(--y)/40);
+  left: calc(60% - var(--y)/40);
   max-width: calc(400px - var(--y)/40);
 }
-.social-net-icons{
+
+.social-net-icons {
   position: fixed;
   top: 40%;
 }
-.social-net-icons ul li img{
+
+.social-net-icons ul li img {
   width: 50%;
 }
 
-@media only screen and (max-width : 992px) {
+.social-net-icons ul li img:hover {
+  opacity: .6;
+}
+
+.img04 {
+  margin-left: 10%;
+  margin-top: -13%;
+  width: 33%;
+}
+
+.fusca {
+  margin-left: 60%;
+  margin-top: -35%;
+  width: 40%;
+}
+
+.mulher {
+  margin-left: -10%;
+  width: 30%;
+  position: absolute;
+}
+
+.folha {
+  margin-top: -5%;
+  width: 15%;
+}
+
+.inspiration {
+  width: 60%;
+}
+
+.inspiration img{
+  width: 60%;
+}
+
+.inspiration p {
+  font-size: 250%;
+  margin-left: 10%;
+}
+
+.pattern-designer {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.vejamais {
+  font-family: 'Segoe Semibold Italic';
+  color: #ff0055;
+  margin-left: 5%;
+  font-size: x-large;
+}
+
+.tucano-animation {
+  max-width: 600px;
+  margin: 100px auto;
+  margin-top: -100%;
+  margin-left: -10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tucano-card {
+  position: relative;
+  margin: 20px 0;
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+}
+
+.tucano-card:hover {
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+}
+
+.tucano-card .tucano-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.tucano-card:hover .tucano-img {
+  transform: rotateY(-135deg);
+}
+
+.tucano-card .tucano-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.sobre {
+  background-color: #e3b2b2;
+  height: 500px;
+}
+
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -81,7 +357,7 @@ p {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
@@ -90,6 +366,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
