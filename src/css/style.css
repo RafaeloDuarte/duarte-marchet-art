@@ -264,8 +264,14 @@ p {
 }
 
 .folha {
-  margin-top: -5%;
-  width: 15%;
+  margin-top: 25%;
+  margin-left: -60%;
+  width: 100%;
+}
+
+.folha-2 {
+  margin-top: -10%;
+  width: 100%;
 }
 
 .inspiration {
@@ -321,6 +327,7 @@ p {
   margin: 20px 0;
   width: 400px;
   height: 500px;
+  left: 150%;
   background: #fff;
   transform-style: preserve-3d;
   transform: perspective(2000px);
